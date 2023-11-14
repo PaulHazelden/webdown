@@ -93,7 +93,7 @@ As a compromise, perhaps we enable two kinds of Group: one (a 'User Group') whic
 
 We probably need to give this a bit more thought, but as a start...
 
-All the Tags starting with the same letter will be in alphabetic sequence within a single fle.  In those files, the tag will be followed by a list of Pages pointed to by that Tag, and ideitified by the Internal Reference (or possibly Page ID).
+All the Tags starting with the same letter will be in alphabetic sequence within a single fle.  In those files, the tag will be followed by a list of Pages pointed to by that Tag, and identified by the Internal Reference (or possibly Page ID).
 
 ## Money
 

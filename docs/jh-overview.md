@@ -2,9 +2,9 @@
 
 ## Concept
 
-Build a community website engine using Markdown, with the files stored and version controlled in GitHub.  Two basic programs are needed: one to create and maintain the various parts of the site, and the other to generate the pages and ensure internal consistency within the site. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
+Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  Two basic programs are needed: one to create and maintain the various parts of the site, and the other to generate the pages and ensure internal consistency within the site. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
 
-Every unit of content will initially be owned by its creator; the owner of an article or blog can invite other people (defined as the members of a Group) to share the writing and editing; authorised Administrators can edit any content.  The ownership (and the responsibility for its maintenance) of an article can be passed on to another member - with their permission, of course.
+Every unit of content will initially be owned by its creator; the owner of an article or blog can invite other people (defined as the members of a Group) to share the writing and editing; authorised System Administrators can edit any content.  The ownership (and the responsibility for its maintenance) of an article can be passed on to another member - with their permission, of course.
 
 An editor of any unit can restore any previous version; the version of the unit (and the latest version, if that differs) will be displayed; 
 
@@ -76,7 +76,7 @@ Some Users are site administrators; presumably there will be the need for severa
 
 ### Group Index
 
-Users can form groups.  Each group will have one or more administrators plus an arbitrary number of ordinary members. A User can allow the members of a Group to edit a page they own.
+Users can form groups.  Each group will have one or more administrators plus an arbitrary number of ordinary members. A User will become a member of a Group if they want to join, and an Administrator agrees (or the other way round). A User can allow the members of a Group they administer to edit a page they own.
 
 The Group Index is a file (or, like the Page Index, a series of files) which contains for each Group the reference numbers of the administrators and members:
 
@@ -85,11 +85,15 @@ The Group Index is a file (or, like the Page Index, a series of files) which con
 * "M"
 * Zero or more member User References
 
-At present, we are not thinking of enabling a Group to include other Groups as a members.  If the Groups take off, this would probably be appreciated, but it significantly increases the conceptual complexity.  As a compromise, perhaps we enable two kinds of Group: one (a 'User Group') which contains only Users, and one (a 'Group Group') which can contain both Users and User Groups.
+At present, we are not thinking of enabling a Group to include other Groups as a members.  If the Groups take off, this would probably be appreciated, but it significantly increases the conceptual complexity.
+
+As a compromise, perhaps we enable two kinds of Group: one (a 'User Group') which can be set up by a User and  contains only Users, and one (a 'Group Group') which can only be set up by a System Administrator, to ensure that it does not create any circular references, and can contain both Users and User Groups.
 
 ### Tag Index
 
-(Need to give this a bit more thought.)
+We probably need to give this a bit more thought, but as a start...
+
+All the Tags starting with the same letter will be in alphabetic sequence within a single fle.  In those files, the tag will be followed by a list of Pages pointed to by that Tag, and ideitified by the Internal Reference (or possibly Page ID).
 
 ## Money
 
@@ -98,10 +102,6 @@ Instead of interfacing with an online payment tool as we do at present, it would
 This implies that the new member signup process will need to access the bank details and check whether the standing order has arrived; from a security perspective, should this be a standalone program which has no user interface?
 
 
-| Command | Description |
-| --- | :---: |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
 
 
 ## Markdown

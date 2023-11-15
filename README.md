@@ -11,6 +11,8 @@ An editor of any unit can restore any previous version; the version of the unit 
 
 The page content is stored in Markdown; the page structure and site structure is stored in text based tables (possibly in CSV - easier to parse than Markdown?); element style uses standard CSS.
 
+The aim of this project is to create a way to build and maintain a community website which is simple and transparent, built in a modular fashion with well-defined interfaces between the various parts.
+
 ## Background
 
 The project arose out of thinking about the requirements for a community website for  '[Just Human?](https://just-human.net/ "'Just Human?' website")', and builds on ideas which were successfully used years ago to build an application generator for a software house.

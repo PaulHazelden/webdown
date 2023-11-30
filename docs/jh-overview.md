@@ -110,9 +110,11 @@ Instead of interfacing with an online payment tool as we do at present, it would
 This implies that the new member signup process will need to access the bank details and check whether the standing order has arrived; from a security perspective, should this be a standalone program which has no user interface?
 
 
+<a name="Markdown">
 
+## Markdown
 
-<a name="Markdown">## Markdown</a>
+</a>
 
 We need to identify the precise dialect of Markdown to be used.  Is [Common Mark](https://commonmark.org/ "Common Mark") suitable?
 

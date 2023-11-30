@@ -2,7 +2,7 @@
 
 ## Concept
 
-Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  Two basic programs are needed: one to create and maintain the various parts of the site, and the other to generate the pages and ensure internal consistency within the site. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
+Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  Two basic programs are needed: one to create and maintain the various parts of the site, and the other to assemble the files into web pages. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
 
 Every unit of content will initially be owned by its creator; the owner of an article or blog can invite other people (defined as the members of a Group) to share the writing and editing; authorised System Administrators can edit any content.  The ownership (and the responsibility for its maintenance) of an article can be passed on to another member - with their permission, of course.
 

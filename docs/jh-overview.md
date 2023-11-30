@@ -2,13 +2,21 @@
 
 ## Concept
 
-Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  Two basic programs are needed: one to create and maintain the various parts of the site, and the other to assemble the files into web pages. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
+### Overview
+
+Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  The aim is to enable a community website to be created and managed using a simple and transparent interface.  This interface will enable all the usual site maintence activities to be undertaken, but because it is all stored in text files, any unusual modifications can be made by suitably authorised people through directly editing the files in GitHub.
+
+There are many tools for building websites already available, but in each case the interface to be used by the website developer is complex, with obscure functionality and unclear terminology.  The aim in this case is that, once the website developer understands the (fairly simple) build process, it should be obvious what needs to be done (what file or files need to be changed, and how) to achieve the desired result.
+
+### Key Details
+
+Two basic programs are needed: one to create and maintain the various parts of the site, and the other to assemble the files into web pages. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
 
 Every unit of content will initially be owned by its creator; the owner of an article or blog can invite other people (defined as the members of a Group) to share the writing and editing; authorised System Administrators can edit any content.  The ownership (and the responsibility for its maintenance) of an article can be passed on to another member - with their permission, of course.
 
-An editor of any unit can restore any previous version; the version of the unit (and the latest version, if that differs) will be displayed; 
+An editor of any unit can restore any previous version; the version of the unit (and the latest version, if that differs) will be displayed; the difference between any two versions can be displayed.
 
-The page content is stored in Markdown (see below); the page structure and site structure is stored in text based tables (possibly in CSV - easier to parse than Markdown?); element style uses standard CSS.
+The page content is stored in [Markdown](#Markdown) (see below); the page structure and site structure is stored in text based tables (possibly in CSV - easier to parse than Markdown?); element style uses standard CSS.
 
 Page structure is determined by page type, and a few standard page types are provided by default.
 
@@ -104,7 +112,7 @@ This implies that the new member signup process will need to access the bank det
 
 
 
-## Markdown
+<a name="Markdown">## Markdown</a>
 
 We need to identify the precise dialect of Markdown to be used.  Is [Common Mark](https://commonmark.org/ "Common Mark") suitable?
 

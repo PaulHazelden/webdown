@@ -1,0 +1,41 @@
+# Introduction
+
+We aim to create a community, but once it grows, the reality is that it will be multiple interconnected communities, joined together by the individuals who are interested in multiple areas, but also joined by a common commitment to the truth and to making the world a better place.
+
+We need to share our passion, information, analysis and proposed solutions because it is far too easy to propose answers which work for some people but work against others.  (The recent football 'super league' is a classic case in point: it would have worked very well for the few participating clubs, but very badly for all the others.)  If we only talk with others who have a vested interest in making our plan work, we never get to hear the objections.
+
+To assist in building communities of interested people, anyone can set up a group to facilitate communication about a specific subject.  But there will not be groups to advocate for a specific solution, even if that solution is, in practice, your starting point: the solutions need to take into account all the relevant factors, and we need to be open to change the solution if others can offer (and demonstrate they offer) a better alternative. 
+
+We want to deliver a combination of blogs, articles and discussion groups, connecting between the various strands where helpful.
+
+# Details
+
+## Blogs and Articles
+
+In the blogs, you are free to post your personal views - and others are free to comment on them - about whatever you wish to talk about.  We hope that this will help in getting to know one another, and maybe in raising subjects which need to be explored in the rest of the site.
+
+In the articles, we seek eventually to cover all the important topics and issues which we struggle with in seeking to make the world a better place.  We are aiming to have one article on each subject, and to link it in to the related articles.
+
+The articles should be regarded as provisional: the best understanding we have right now, but always subject to revision, correction and clarification as more people post their comments and feedback. 
+
+## Personal and Communal
+
+As far as possible, articles should reflect our corporate understanding of the subject - if you don't want to do that, please create a blog post instead.  If you write an article, you retain control of the content, but you are expected to update it, as appropriate, in the light of feedback.
+
+There is a careful balance to be held here between allowing people to express their views and expecting them to take on board the views of others: we believe this balance can be found if we are all committed both to seeking the truth and to compassion for everyone.
+
+## Concise and Comprehensive
+
+We aim for all articles to be as brief as possible, with related details going into related (and linked) articles.  This approach should focus the discussion, make it easier for people to engage, and easier for the community to seek a common understanding while exploring their varied perspectives.
+
+Where a common understanding is not possible, each alternative should be presented and summarized as fairly as possible; each alternative will probably need to be explored in a linked article of their own.  However, if the author of an article does not want to include your perspective within their article, please write an alternative version from your perspective, and we will link to both versions so that others can compare them.
+
+For an important and difficult subject, the main article should function as an introduction - again, as comprehensive and unbiased as possible, pointing to the more detailed and more difficult articles.
+
+If you are unable to maintain an article you created, and are unable to find a suitable person to take it on, please say so on the page, to help the site administrators pick up on the gap.
+
+## Ownership
+
+The author of each article or comment retains the copyright to their work under the Creative Commons Attribution-ShareAlike license.
+
+ 

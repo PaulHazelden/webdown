@@ -4,7 +4,9 @@
 
 ### Overview
 
-Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.  The aim is to enable a community website to be created and managed using a simple and transparent interface.  This interface will enable all the usual site maintence activities to be undertaken, but because it is all stored in text files, any unusual modifications can be made by suitably authorised people through directly editing the files in GitHub.
+Build a community website engine using Markdown, based on text files stored and version controlled in GitHub.
+
+The aim of this project is to create a way to build and maintain a community website which is simple and transparent, built in a modular fashion with well-defined interfaces between the various parts.  The development program will enable all the usual site maintence activities to be undertaken, but because the data is all stored in text files, any unusual modifications can be made by suitably authorised people through directly editing the files in GitHub.
 
 There are many tools for building websites already available, but in each case the interface to be used by the website developer is complex, with obscure functionality and unclear terminology.  The aim in this case is that, once the website developer understands the (fairly simple) build process, it should be obvious what needs to be done (what file or files need to be changed, and how) to achieve the desired result.
 

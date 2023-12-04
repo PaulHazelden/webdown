@@ -18,3 +18,7 @@ The page generatiion is relatively straightforward, so let's concentrate on that
 ## Background
 
 The project arose out of thinking about the requirements for a community website for  '[Just Human?](https://just-human.net/ "'Just Human?' website")', and builds on ideas which were successfully used years ago to build an application generator for a software house.
+
+## Further Details
+
+The project documentation can be found in the 'doc' directory.  The most important details are in the  [Overview](doc/jh-overview.md "Project Overview").

@@ -22,7 +22,7 @@ The page content is stored in [Markdown](#Markdown) (see below); the page struct
 
 Page structure is determined by page type, and a few standard page types are provided by default.
 
-The public requirements are documented on the [Site Functionality](https://just-human.net/admin-discussion/site-functionality "Site Functionality") page of the current website; some more principles and thoughts on implementation are given in the document, '[Towards a Platform for Just Human?](Towards_A_Platform.md)'.
+The public requirements are documented on the [Site Functionality](https://just-human.net/admin-discussion/site-functionality "Site Functionality") page of the current website; some more principles and thoughts on implementation are given in the document, '[Towards a Platform for Just Human?](jh-towards-a-platform.md)'.
 
 Web pages will be assembled from their constituent parts as they are required; this should be fairly straightforward.  The complex task lies in building those components so they are ready to be displayed: the core tasks are to open a Markdown file (or create a new one), edit the file; and each time the file is saved to GitHub, (1) write it to GitHub, and (2) run Pandoc to convert it to HTML. There will also be a need to hide and delete components.
 

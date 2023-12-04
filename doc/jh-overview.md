@@ -12,7 +12,7 @@ There are many tools for building websites already available, but in each case t
 
 ### Key Details
 
-Two basic programs are needed: one to create and maintain the various parts of the site, and the other to assemble the files into web pages. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
+Two basic programs are needed: one to create and maintain the various parts of the site, and the other to assemble the files into web pages - see '[Page Generation](jh-page-generation.md)' for more details. Two subsidiary programs can be identified at this stage: an internal consistency checker, which we will need to run as a stand-alone tool sometimes; and probably a bank account query tool to check whether a membership payment has been received from a specified User.
 
 Every unit of content will initially be owned by its creator; the owner of an article or blog can invite other people (defined as the members of a Group) to share the writing and editing; authorised System Administrators can edit any content.  The ownership (and the responsibility for its maintenance) of an article can be passed on to another member - with their permission, of course.
 

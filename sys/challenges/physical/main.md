@@ -3,19 +3,19 @@
 Let's be clear about the nature of the physical challenges we face.
 
   *  The Earth:
-    *    Global Climate Change
-    *    Pollution - both chemicals and plastics
-    *    Fresh water - increasing demand and decreasing supply
+     *    Global Climate Change
+     *    Pollution - both chemicals and plastics
+     *    Fresh water - increasing demand and decreasing supply
   *  The Biosphere:
-    *    Loss of biodiversity
-    *    Mass extinction - both species and genera
-    *    Species migration - including human migration
-    *    Antibiotic resistance
-    *    Loss of topsoil
+     *    Loss of biodiversity
+     *    Mass extinction - both species and genera
+     *    Species migration - including human migration
+     *    Antibiotic resistance
+     *    Loss of topsoil
   *  The Human Race
-    *    Overpopulation - and the consequences of ageing populations
-    *    Unrestricted economic growth
-    *    Pandemics, currently the Covid-19 Pandemic 
+     *    Overpopulation - and the consequences of ageing populations
+     *    Unrestricted economic growth
+     *    Pandemics, currently the Covid-19 Pandemic 
 
 There is a short (under 20 minutes) video by Economics Explained which summarizes many of these issues: MIT Has Predicted that Society Will Collapse in 2040.
 
@@ -28,8 +28,8 @@ These proposals to address the physical world problems are (to a first approxima
 *    Water
 *    Finance
 *    Manufacturing
-    *    What is manufactured
-    *    Where it is manufactured
+     *    What is manufactured
+     *    Where it is manufactured
 *    Plastics
 *    Poisonous chemicals
 *    Transport

@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# makewebdown
+#
+# Sync the source code from GitHub
+# Create any missing .htm files
+# Write everything back to GitHub
+#
+
+echo -e  "*\n* makewebdown v0.1, 9 Dec 2023 \n*"
+
+#
+# Do we need a version message?  If so, then
+# check that we have a version message passed
+#
+#if [[ $# -eq 0 ]] 
+#then
+#  echo 'Missing version message'
+#  exit 1
+#fi
+#versionmessage=$1
+
+#
+# Pull all the files down from GitHub
+# Something like this???
+# git clone git@github.com:PaulHazelden/webdown.git
+#
+# Create or update the missing or out of date .htm files 
+find . -type f \( -name "*.md" \) -exec "createhtm" '{}' \;
+
+#
+# Push everything back to GitHub
+# Something like this???
+#
+# git add .
+# git commit -m "Create .htm from the new or altered .md file"
+# git push origin main
+
+echo -e  "*\n* makewebdown end \n*"

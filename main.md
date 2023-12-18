@@ -6,9 +6,7 @@
 
 [//]: # (Changed: 19/03/2023 22:15)
 
-# Home Page
-
-## Welcome!
+# Welcome!
 
 We want to make the world a better place: by talking with, listening to - and potentially working with - people who see the world differently.
 

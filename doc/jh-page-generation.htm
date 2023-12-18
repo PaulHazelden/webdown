@@ -1,0 +1,25 @@
+<h1 id="generate-a-page">Generate a Page</h1>
+<h2 id="overview">Overview</h2>
+<p>This document aims to provide an outline (perhaps pseudo-code in
+places?) of the processing which will be required to turn the files
+stored on the website into pages which can be displayed in a
+browser.</p>
+<h2 id="processing">Processing</h2>
+<h3 id="check-the-user">1. Check the User</h3>
+<p>Determine whether this is a logged-in User, and set a flag.</p>
+<h3 id="parse-the-variables-passed">2. Parse the variable(s) passed</h3>
+<p>If a page number is passed, open the page index, find the page
+location and load the page at that location.</p>
+<h3 id="display-the-page">3. Display the page</h3>
+<p>If the page contains a CSS file, load that after the system CSS.</p>
+<p>Display the page header, with either: * the name of the User and a
+‘Logout’ button; or * ‘Guest’ and a ‘Login’ button.</p>
+<p>If the User or Guest has not accepted use of cookies, display the
+notice and an ‘Accept’ button; if the button is pressed, remove the
+notice.</p>
+<p>I was thinking that we check the directory and see which input files
+are present but, for better performance, each input file should have a
+corresponding ‘include’.</p>
+<p>Display the standard page footer.</p>
+<p>If the ‘Login’ or ‘Logout’ button is pressed, perform that processing
+and then reload the page.</p>

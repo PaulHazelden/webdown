@@ -33,9 +33,11 @@
 
 
 $row = 1;
-if (($handle = fopen("0.txt", "r")) !== FALSE) {
+$found = 'n';
+if (($handle = fopen("page/0.txt", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
       if ($data[0] == $req) {
+        $found = 'y';
         $file4 = $data[1];
         break;
       }
@@ -43,7 +45,16 @@ if (($handle = fopen("0.txt", "r")) !== FALSE) {
     fclose($handle);
 }
 
-header("Location: ../../" . $file4);
+if ( $found == 'y' ) {
+header("Location: ../" . $file4);
 die();
+}
+
+  $title = 'Page Not Found';
+  $keywords = 'just human, cooperate, listen';
+  $varpath = '../';
+  include "{$varpath}inc/head.inc";
+  echo "<p>Page '" . $req . "' cannot be found.  If you followed a link on the site, please report this!</p>\n";
+  footer ();
 
 ?>

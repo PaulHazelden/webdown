@@ -12,25 +12,25 @@ ideas can be grounded in the real world.  When talking about possible solutions,
 are two big dangers: on the one hand we can be too idealistic; on the other, we can be too pragmatic.
 
 *    **Unity**.  At the one extreme, people believe in a united world, with everybody in perfect
-*    harmony.  In this vision, everyone works together, all for a single purpose, and disagreement
-*    is not allowed; the world is a carefully regulated society, in which each person plays the
-*    part which the whole society requires of them.
+    harmony.  In this vision, everyone works together, all for a single purpose, and disagreement
+    is not allowed; the world is a carefully regulated society, in which each person plays the
+    part which the whole society requires of them.
 *    **Division**.  At the other extreme, people believe in a divided world, with everybody in
-*    conflict. In this vision, we work together for temporary, selfish reasons, because we must;
-*    the world is a jungle, 'red in tooth and claw'; in the end it is 'every man for himself'.
+    conflict. In this vision, we work together for temporary, selfish reasons, because we must;
+    the world is a jungle, 'red in tooth and claw'; in the end it is 'every man for himself'.
 *    **Diversity**.  Our vision is of a middle way: one where difference does not lead to
-*    disagreement, nor variety lead to conflict.  We believe we can learn from and live with one
-*    another, without needing to agree with one another on every point.
+    disagreement, nor variety lead to conflict.  We believe we can learn from and live with one
+    another, without needing to agree with one another on every point.
 
 The same basic choices face us when we attempt to describe what we are aiming for.
 
 *    **Idealistic**.  At the one extreme, people attempt to describe a perfect society.
 *    **Pragmatic**.  At the other extreme, people settle for simply fixing the worst
-*    consequences of our current system.
+    consequences of our current system.
 *    **Balance**.  Our vision is of a middle way: to address not only the injustices and
-*    failings produced by the present system, but also the structural problems which create
-*    those injustices and failings, as we seek to move towards a society which is better
-*    for everyone, and better for the planet.
+    failings produced by the present system, but also the structural problems which create
+    those injustices and failings, as we seek to move towards a society which is better
+    for everyone, and better for the planet.
 
 # Systems and Society
 

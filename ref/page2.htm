@@ -23,27 +23,31 @@
   
 #  pos = $len - 10;
 
-#  echo "<p>File 1: '" . $file1 . "'</p>\n";
-#  echo "<p>File 2: '" . $file2 . "'</p>\n";
-#  echo "<p>File 3: '" . $file3 . "'</p>\n";
-#  echo "<p>Page  : '" . $req . "'</p>\n";
+  echo "<p>File 1: '" . $file1 . "'</p>\n";
+  echo "<p>File 2: '" . $file2 . "'</p>\n";
+  echo "<p>File 3: '" . $file3 . "'</p>\n";
+  echo "<p>Page  : '" . $req . "'</p>\n";
 #  echo "<p>Length: '" . $mylen . "'</p>\n";
 #  echo "<p>Part  : '" . substr($file1, $pos) . "'</p>\n";
-#  echo "<p>Part  : '" . substr($file1, 35) . "'</p>\n";
+  echo "<p>Part  : '" . substr($file1, 35) . "'</p>\n";
 
 
 $row = 1;
-if (($handle = fopen("0.txt", "r")) !== FALSE) {
+if (($handle = fopen("page/0.txt", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+  echo "<p>Page: '" . $data[0] . "'</p>\n";
+      
       if ($data[0] == $req) {
         $file4 = $data[1];
+  echo "<p>File 4: '" . $data[1] . "'</p>\n";
         break;
       }
     }
     fclose($handle);
 }
+  echo "<p>File 4: '" . $file4 . "'</p>\n";
 
-header("Location: ../../" . $file4);
+# header("Location: ../" . $file4);
 die();
 
 ?>

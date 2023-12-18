@@ -1,0 +1,295 @@
+<div title="header">
+<p><br />
+</p>
+</div>
+<p><strong>Towards a platform for</strong> <strong><em>Just
+Human?</em></strong></p>
+<p>Version 0.3, October 2023</p>
+<p><strong>Contributors:</strong> Paul Hazelden, Brian Monahan</p>
+<h1 id="overall-purpose-and-philosophy">Overall Purpose and
+Philosophy</h1>
+<p>The purpose of this <em>platform</em> is to host conversations,
+discussions and interactions between a large number of users, each of
+whom typically participates in a wide range of groups or communities. (A
+platform is an architectural framework within which systems interact.
+Systems that participate within or upon a platform typically conform to
+a number of architectural requirements e.g. provide certain kinds of
+interfaces etc.)</p>
+<p>The overall objective is to, over time, establish a corpus/web of
+established documents which have acquired stability and have some
+community support, representing some degree of consensus. Of course,
+what this consensus is will naturally change over time.</p>
+<p>It is envisaged that these interactions consist of an exchange of
+documents to establish and contribute to ongoing discussions, both
+within and between various communities. These documents will typically
+aspire to be quite substantial (i.e. <em>long-form</em>) contributions
+and be written with the aim of sustaining rational, critical debate and
+discussion.</p>
+<p>[Paul: I think we need to define what we mean by
+‘<em>long-form</em>’… in my head, we are talking about maybe 2-3,000
+words, not a book. In other words, something which people can reasonably
+read and respond to in a single sitting. And, while they would
+<em>aspire</em> to be substantial, I think it is reasonable for people
+to post a ‘holding page’, maybe a paragraph or two, giving the outline
+or core thought of a proposed article, with the intention of gathering
+some initial responses and suggestions.</p>
+<p>Also, I would like the documents to aspire to be both substantial and
+atomic - dealing with just one topic, or one aspect of a larger topic.
+We can have a more productive conversation when there is a clear
+focus.]</p>
+<h2 id="criticism-is-essential-for-truth-to-emerge">Criticism is
+essential for truth to emerge</h2>
+<p>Critical response to documents and views is all part of the process
+of eventually arriving at established views and opinions. Both dissent
+and agreement will be commonplace. Although freedom of creative
+expression is strongly encouraged, this must not be abused - since
+freedom of speech is not a freedom to abuse.</p>
+<p>All users have a right to give their own opinions and views – however
+obscure, illogical and awful they may appear to one. Opinions and views
+may be unpopular – in one’s view – but that doesn’t mean they don’t
+deserve representation in some form. That being said, it is also the
+case that any opinion worth expressing in a rational manner is also
+worth saying in a dignity-affirming manner. Speech designed to incite
+hatred directed at any group or individual is entirely unacceptable and
+cannot be tolerated.</p>
+<h1 id="technical-requirements-and-principles">Technical Requirements
+and Principles</h1>
+<p>We envisage a web platform with the following layered “feature”
+requirements, starting with the most basic. Each requirement includes
+all its predecessors. This means we start with simple requirements and
+continue onwards. Implementations at a particular level are called
+<em>apps</em> and necessarily implement all requirements at this and
+prior levels.</p>
+<ol type="1">
+<li><strong>Document Management:</strong> The app must provide a way to
+manage and curate named documents. This typically means
+<strong>adding</strong> documents, <strong>retrieving/serving</strong>
+documents, and <strong>removing</strong> documents. Documents are
+organised within named folders/directories. The app supports the use of
+<em>sharing</em> both folders and documents via <em>links</em>. Folders
+and documents are known as <em>items</em>.</li>
+</ol>
+<p><em>Notes</em>:</p>
+<ol type="a">
+<li><p>Links are required to be <em>acyclic</em> guaranteed
+e.g. attempts to create links resulting in cyclic paths are actively
+prevented. [Paul: I’m not sure why this is important – or even
+desireable? Surely we do want two articles to be able to make reference
+to each other? We do need acyclic navigation – a traditional ‘tree’
+structure’ – but that is not the same as providing internal links
+between articles and pages.]</p></li>
+<li><p>The app may not possess the ability to <em>generate</em> or
+<em>edit</em> a document to produce a subsequent document. [But see
+section 6 below.] (The issue here is that generating/editing content is
+rather specialist and would require a complex (and expensive) edit
+widget to be consistently supported across the piece. Would not being
+able to edit directly in the app be such hardship? Hopefully, can keep
+the editing supported to user comments and so on … which doesn’t require
+Rich Text support.)</p></li>
+<li><p>At this level, document management may be <em>agnostic</em> to
+versioning and the notion of <em>revision</em>.</p></li>
+<li><p>At this level, the app may typically be single-user, although
+multi-user support must be feasible.</p></li>
+</ol>
+<p><strong>Basic metadata searching for items:</strong> The app must
+provide a way to search for <em>items</em> (e.g. folders and documents),
+based on certain <em>metadata</em> characteristics that they
+possess.</p>
+<p><em>Notes</em>:</p>
+<ol type="a">
+<li><p>At this level, searching and selection are typically restricted
+to <em>external</em> general characteristics of items (e.g. name, size,
+modified date-time, etc.) – and may result in finding no items, one item
+or many items.</p></li>
+<li><p>The <em>range</em> of any search is naturally given through the
+matching of metadata attributes e.g. path information, names, size,
+MIMEtype, etc.</p></li>
+<li><p>Secure hashes are required as metadata for all items. However,
+due to the basic properties required for a secure hash, the secure hash
+of any item cannot logically be embedded within <em>themselves</em> –
+they must be located alongside, perhaps via a suitable
+<em>annotation</em>, to ensure independent verification of the secure
+hash.</p></li>
+<li><p>At this level, the app may typically be single-user, although
+multi-user support must be feasible.</p></li>
+</ol>
+<p><strong>Version control of items:</strong> The app must support the
+notion of an item being a <em>version</em> of another item (preserving
+the same kind). The notion of a version is simply a <em>one-many</em>
+<em>binary relationship</em> between items – it may or may not have been
+established by updating one item into another item. However, it is the
+case that one of the items will be the <em>source</em> (e.g. dated
+earlier) and the other item will be a <em>revision</em> (e.g. dated
+later). Note that <em>any</em> two items of the same kind (but having
+different times) could potentially be versions of each other. Each item
+can have at most one source, but it may typically have many revisions.
+Additionally, the (<em>principal</em>) <em>name</em> of an item is
+preserved from version to version - but the <em>full name</em> of each
+item contains both its principal name and the exact version information
+that is necessarily sufficient to fully determine its unique name.</p>
+<p>Naturally, the app should additionally support searching involving
+version information, seeking particular versions and so on. Given a
+particular item, it is possible to recover the version information and
+determine its source and any immediate, direct revisions. Given a
+particular date-time and principal name, the app can support the
+reconstruction of the context for that item, if it exists.</p>
+<p><em>Notes</em>:</p>
+<ol type="a">
+<li><p>At this level, although version control conceptually amounts to
+the <em>annotation</em> of version information to items, it requires
+significant effort for efficient implementation. Version control is
+primarily a way to provide additional organisational structure to allow
+historical reconstruction of the <em>evolution</em> of a particular set
+of items over a period of time.</p></li>
+<li><p>Partial implementation involving version control just for
+documents rather than folders may be acceptable – but obviously does not
+count as full implementation of the requirement.</p></li>
+<li><p>At this level, the app may typically be single-user, although
+multi-user support must be feasible.</p></li>
+</ol>
+<p><strong>Searching and selection within content:</strong> The app must
+provide a way to search and select within and across the content, for
+all content types supported. This may be quite challenging but
+essentially requires the content to be textually extractable and made
+available in a searchable format. For example, PDF content needs to be
+available and the bare words indexable. (Python libraries do exist for
+some of this, I understand.)</p>
+<p><em>Notes</em>:</p>
+<ol type="a">
+<li><p>It is hopefully possible to avoid having to provide a complex
+<em>edit widget</em> in the app implementation to provide this
+capability. In other words, it is possible to extract supported content
+in a form that allows some reasonable indexing of the content.</p></li>
+<li><p>At this level, the app may typically be single-user, although
+multi-user support must be feasible.</p></li>
+</ol>
+<p><strong>Multi-user:</strong> The app must support multiple users and
+their interactions. It is only at this point that some kind of
+non-specialist user interface needs to be available so that documents
+and their versions from other users can be accessed and referred to.</p>
+<p>The basic idea is that each user has their own login and their own
+space in which to keep their own items. Users may also access and read
+other users’ items shared with them. Items may also be globally
+<em>published</em> and made accessible by <em>any</em> user. [Paul: not
+sure about this: I have been working on the assumption that all content
+on the site (apart from some obvious administrative bits) will be public
+- anyone can talk with anyone else, but not in secret. Or is this just a
+way of enabling people to develop draft versions of their work before
+they go public?]</p>
+<p>All services already provided must be available in some manner for
+general users.</p>
+<p>Admin users will require privileged access to make repairs,
+reconfigure component systems and such like. Admin actions are audited
+and are subject to review.</p>
+<p>Multi-user support implies a fully concurrent, distributed mode of
+operational activity. A fully Internet-enabled app is required.</p>
+<p>[Paul: I have assumed that the users must be able to create and join
+groups, work on content and discuss ideas within a group; perhaps this
+functionality is not actually required? But it seems like enabling some
+people to collaborate in a meaningful way would be helpful. The main
+value of enabling group membership lies not in permitting only selected
+people to contribute, but in enabling only selected people to be
+notified of changes - but perhaps enabling people to be notified of
+changes to a page would be sufficient? This would not facilitate a group
+working on a linked set of pages, but perhaps that is not a sufficiently
+significant scenario?]</p>
+<p><em>Notes</em>:</p>
+<ol type="a">
+<li>At this level, multi-user interaction needs to be supported as the
+following levels only make sense in the context of having multi-user
+support.</li>
+</ol>
+<p><br />
+<br />
+</p>
+<ol start="6" type="1">
+<li><strong>User comments and annotations to content:</strong>
+<strong>&lt;More Here&gt;</strong></li>
+</ol>
+<p>It is essential for users to be able to post comments on articles,
+and edit those comments. Is it assumed that this will be achieved solely
+by creating a new document and uploading it into a ‘comment’ space?</p>
+<p>If documents are purely uploaded documents, then only the author can
+change and upload a revised version, so annotations are not
+possible.</p>
+<p>The ‘like’ button is unhelpful, but some kind of simple reaction
+would be useful. In this context, the main danger of the ‘like’ button
+is not present, as we will not be choosing what content to present to
+the User.</p>
+<p>So the question is: what do we want to replace the ‘like’ button?
+Presumably there needs to be an array of response options, for
+example:</p>
+<ul>
+<li><p>I fully agree with you.</p></li>
+<li><p>I mostly agree with you - there are minor details I disagree
+with. (Optional: and these are the details.)</p></li>
+<li><p>I partly agree with you - there are significant details I
+disagree with. (Optional: and these are the details.)</p></li>
+<li><p>I mostly disagree with you - there are minor details I agree
+with. (Optional: and these are the details.)</p></li>
+<li><p>I fully disagree with you.</p></li>
+</ul>
+<p>Also:</p>
+<ul>
+<li><p>I think the content effectively covers the subject.</p></li>
+<li><p>I think the content mainly covers the subject, but some minor
+details are missing. (Optional: and these are the details.)</p></li>
+<li><p>I think the content partly covers the subject, but some
+significant details are missing. (Optional: and these are the
+details.)</p></li>
+</ul>
+<ol start="7" type="1">
+<li><strong>Discussions</strong></li>
+</ol>
+<p>There must be some way for the users to communicate with each other,
+apart from posting and commenting on documents.</p>
+<p>There should be a mechanism for users to be notified of new
+contributions to a selected discussion.</p>
+<ol start="8" type="1">
+<li><strong>User Surveys</strong></li>
+</ol>
+<p>A previous set of requirements described a survey facility, to enable
+people to create a survey to discover the opinion of the site members.
+Responding to these surveys would, of course, be voluntary; it is not
+clear exactly how people would be notified that a survey had been
+created which they could choose to participate in.</p>
+<p>However, the expectation was that there would be one survey which all
+members would be expected to complete, providing their basic demographic
+and equalities details, so we can know who the members are - and,
+perhaps, enable us to work on recruiting under-represented groups. There
+might also be an annual ‘how are we doing?’ survey which all members
+would be asked to complete.</p>
+<ol start="9" type="1">
+<li><strong>Membership Fee Collection</strong></li>
+</ol>
+<p>The need for a membership fee to be charged by default has been
+described elsewhere. The site admin must be able to add people without a
+fee, and to add people who have a valid reason for not displaying their
+real name, so we need a mechanism for people to be able to request this
+support.</p>
+<ol start="10" type="1">
+<li>…</li>
+</ol>
+<h1 id="architectural-alternatives-and-principles">Architectural
+alternatives and principles</h1>
+<ul>
+<li><p>3 tier logical architecture</p>
+<ol type="a">
+<li><p>User interface</p></li>
+<li><p>Middleware</p></li>
+<li><p>Storage/database</p></li>
+</ol></li>
+<li><p>Different approaches:</p>
+<ol type="a">
+<li><p>Can we tailor an already existing system which does most of what
+is needed?</p></li>
+<li><p>Failing that, can we build by mashing-up several big components
+together with some glue code (Python/Javascript)?</p></li>
+<li><p>Failing that, how much do we have to build ourselves?</p></li>
+<li><p>…</p></li>
+</ol></li>
+</ul>
+<p><strong>&lt;TO BE CONTINUED&gt;</strong></p>
+<div title="footer">
+<p><span style="background: #c0c0c0">5</span></p>
+</div>

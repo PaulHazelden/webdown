@@ -1,8 +1,7 @@
 <?php
-   phpinfo();
   $title = 'Home Page';
   $keywords = 'just human, cooperate, listen';
   $varpath = './';
-  include "{$varpath}inc/head.inc";
+  include "{$varpath}inc/head.php";
   footer ();
 ?>

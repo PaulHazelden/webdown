@@ -1,7 +1,7 @@
 <?php
-  $title = 'Vision';
+  $title = 'Values';
   $keywords = 'just human, cooperate, listen';
   $varpath = '../../../';
-  include "{$varpath}inc/head.inc";
+  include "{$varpath}inc/head.php";
   footer ();
 ?>

@@ -37,8 +37,8 @@ reviewing it.  If you cannot afford £5, we ask you to contribute
 £1 a month.  If you genuinely cannot afford £1 but wish to join, 
 we have some bursary places available so please contact us for 
 details.  There are several basic reasons for this membership 
-fee: for more about these reasons, please see Why a Membership 
-Fee? but, in summary, they are ...
+fee: for more about these reasons, please see [Why a Membership 
+Fee?](../../../ref/page.htm?p=20) but, in summary, they are ...
 
 -    **Knowing the members**.  We are building a community where 
     you can know and trust the other members, and this means we 
@@ -52,8 +52,8 @@ Fee? but, in summary, they are ...
     to start contributing to something they have become used to 
     receiving for free.
 -    **Unbiased choices**.  The finance has to come from somewhere 
-    and, as we know,  'the person who pays the piper calls the tune'.  
-    There are only a few ways of covering the costs, and they all 
+    and, as we know, 'the person who pays the piper calls the 
+    tune'. There are only a few ways of covering the costs, and they all 
     have disadvantages.
 -    **Future possibilities**.  If this community is successful, and 
     we develop a vision for how we can make the world a better place, 
@@ -61,6 +61,7 @@ Fee? but, in summary, they are ...
     possibility of deciding to do something worthwhile together.
 
 # Advantages
+
 This approach provides several advantages, and enables us to make some commitments.
 
 -    The financial aspect of the project is explicit and addressed up front.
@@ -72,10 +73,10 @@ This approach provides several advantages, and enables us to make some commitmen
 -    The membership details will not be sold or otherwise made available 
     to any external body.
 
- # See Also
+# See Also
 
  Please see also:
  
-- Why a Membership Fee?
+- [Why a Membership Fee?](../../../ref/page.htm?p=20)
 - Financial Details
 

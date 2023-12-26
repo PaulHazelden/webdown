@@ -17,3 +17,5 @@
 16,"art/physical"
 17,"art/social"
 18,"art/spiritual"
+19,"art/physical/the-earth"
+20,"sys/introduction/money/why-a-membership-fee"

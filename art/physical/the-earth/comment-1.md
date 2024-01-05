@@ -1,4 +1,0 @@
-[Comment by Fred]
-
-Okay, those items seem reasonable, but surely there are more major issues
-affecting the earth than just these three?

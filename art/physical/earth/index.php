@@ -1,6 +1,7 @@
 <?php
-  $title = 'Home Page';
+  $title = 'The Earth';
+  $author = "Paul Hazelden";
   $keywords = 'just human, cooperate, listen';
-  $varpath = './';
+  $varpath = '../../../';
   include "{$varpath}inc/head.php";
 ?>

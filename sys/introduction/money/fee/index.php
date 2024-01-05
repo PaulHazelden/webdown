@@ -1,6 +1,6 @@
 <?php
-  $title = 'Home Page';
+  $title = 'Why a Membership Fee?';
   $keywords = 'just human, cooperate, listen';
-  $varpath = './';
+  $varpath = '../../../../';
   include "{$varpath}inc/head.php";
 ?>

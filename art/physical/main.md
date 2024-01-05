@@ -2,7 +2,7 @@
 
 Let's be clear about the nature of the physical challenges we face.
 
-  *  [The Earth](../../ref/page.htm?p=19):
+  *  [The Earth](../../ref/page.php?p=19):
      *    Global Climate Change
      *    Pollution - both chemicals and plastics
      *    Fresh water - increasing demand and decreasing supply

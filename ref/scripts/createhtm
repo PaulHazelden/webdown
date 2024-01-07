@@ -1,11 +1,14 @@
 #!/bin/bash
 #
-# createhtm  9 Dec 2023
+# createhtm
 #
 # If a .htm file is missing
 # or older than the .md file
 # then build a new .htm file
 #
+
+  echo createhtm 6 Jan 2024
+
   x=${#1}; y=$((x-3)); mainpart=${1:0:y}
   mdfile=${mainpart}.md
   htmfile=${mainpart}.htm

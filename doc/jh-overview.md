@@ -26,11 +26,13 @@ The public requirements are documented on the [Site Functionality](https://just-
 
 Web pages will be assembled from their constituent parts as they are required; this should be fairly straightforward.  The complex task lies in building those components so they are ready to be displayed: the core tasks are to open a Markdown file (or create a new one), edit the file; and each time the file is saved to GitHub, (1) write it to GitHub, and (2) run Pandoc to convert it to HTML. There will also be a need to hide and delete components.
 
-Web pages can be moved and renamed (but probably only by a system administrator - we don't want this to happen too often); the constituents of the page will remain attached to the page.  We don't need very sophisticated editing tools here, as anything beyond the standard operations can be undertaken in a plain text editor by a site administrator.
+Web pages can be moved and renamed (but probably only by a system administrator - we don't want this to happen too often); the constituents of the page (comments, for example) will remain attached to the page.  We don't need very sophisticated editing tools here, as anything beyond the standard operations can be undertaken in a plain text editor by a site administrator.
 
 When a page is moved or renamed, the page content is moved to the new file system location, and a page stub is provided, with a link to the new page.  This way, all internal links automatically follow the page to its new name and/or location, and external links into the site will continue to work.
 
-If someone wants to create a new page with the same name in the same location as a moved or renamed page, this will be handled like any other duplicate name: a new page ID is created, and the name in the file system will have a '-version_number' appended to the name,
+This should work adequately for pages which are 'leaves' on the directory tree, but it might be a bit cumbersome if we need to move a page and lots of pages underneath it. Is there any obvious technique for handling this situation? Or do we just hope it doesn't happen very often?
+
+If someone wants to create a new page with the same name in the same location as a moved or renamed page, this will be handled like any other duplicate name: a new page ID is created, and the name in the file system will have a '-version_number' appended to the name.
 
 
 ## Standard Building Blocks

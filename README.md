@@ -12,7 +12,7 @@ Two basic programs are needed: one to create and maintain the various parts of t
 
 The original plan was to use GitHub to generate the file version meta data and host the web site.  However, GitHub (unlike a version control tool I used in the past) does not enable version details to be included within the files, and GitHub does not enable PHP to be executed in its pages, so it cannot host the web site.  So GitHub is looking less ideal as a tool here.  But we started down this route, so let's continue in this direction for now. And it is a good way to share progress.
 
-The page generatiion is relatively straightforward, so let's concentrate on that initially.  Once the pages can be generated from the source files, then we will have proved the concept, and can focus on the more challenging task of generating and maintaining the source files.
+The page generation is relatively straightforward, so let's concentrate on that initially.  Once the pages can be generated from the source files, then we will have proved the concept, and can focus on the more challenging task of generating and maintaining the source files.
 
 
 ## Background
